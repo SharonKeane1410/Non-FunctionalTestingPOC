@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Run Postman collection with Taurus newman executor') {
             steps{
-                bat 'docker run --rm ' +
+                sh 'docker run --rm ' +
                         '-v JMeter/Taurus/newman_executor/bzt-config:/bzt-configs ' +
                         '-v JMeter/Taurus/newman_executor/artifacts:/tmp/artifacts ' +
                         'blazemeter/taurus ' +
