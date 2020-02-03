@@ -1,0 +1,9 @@
+---
+execution:
+- concurrency: 1
+  executor: newman
+  hold-for: 10s
+  iterations: 10
+  scenario:
+    script: postman-sample-collection.json
+

@@ -1,0 +1,13 @@
+{
+ "execution": [
+  {
+   "executor": "newman",
+   "concurrency": 1,
+   "hold-for": "10s",
+   "iterations": 10,
+   "scenario": {
+    "script": "postman-sample-collection.json"
+   }
+  }
+ ]
+}
